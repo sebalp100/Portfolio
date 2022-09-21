@@ -1,1 +1,53 @@
-# mobiletest
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# Portfolio: Mobile First Approach
+
+> In this project, we are setting up a portfolio page with the mobile-first approach. We begin by making a toolbar and a header first.
+
+## Built With
+
+- HTML, CSS.
+- Visual Studio Code.
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
+- Github account.
+- Code editor (Visual Studio Code, Atom, etc.)
+
+### Setup
+
+- Open up Github.
+- Clone this repository from GitHub by copying the HTTPS address.
+- On your VSCode hit "Open a new repository" and paste the URL.
+- Select the destination folder.
+- All the files should be cloned to your local folder and are ready to be used.
+
+## Authors
+
+- GitHub: [@sebalp100](https://github.com/sebalp100)
+- LinkedIn: [Sebastian Martin](https://www.linkedin.com/in/sebastian-martin-956b2724a/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Microverse
+- Wes Bos for his Flexbox turial (https://www.youtube.com/watch?v=Vj7NZ6FiQvo&list=PLu8EoSxDXHP7xj_y6NIAhy0wuCd4uVdid&index=1&ab_channel=WesBos)
+- Figma templates
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
