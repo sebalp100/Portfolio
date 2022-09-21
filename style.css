@@ -1,3 +1,10 @@
 body {
   background-color: #fff;
 }
+
+.hamburger-button {
+  width: 16px;
+  height: 2px;
+  background-color: #6070ff;
+  margin: 6px 0;
+}
