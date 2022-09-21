@@ -1,10 +1,17 @@
 body {
   background-color: #fff;
+  font-family: Poppins;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .hamburger-button {
-  width: 16px;
+  width: 18px;
   height: 2px;
   background-color: #6070ff;
-  margin: 6px 0;
+  margin: 3px 0;
 }
