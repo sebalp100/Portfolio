@@ -12,6 +12,7 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   padding: 24px;
+  margin-bottom: 2em;
   height: 718px;
   border-bottom-left-radius: 50%;
 }
@@ -60,4 +61,23 @@ h3 {
 
 .headline-intro {
   padding-top: 4rem;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: 375px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 100vw;
+  background-color: #e5e5e5;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6em;
+  padding: 16px;
 }
