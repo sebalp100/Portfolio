@@ -145,7 +145,8 @@ h5 {
   justify-content: space-between;
 }
 
-.project-button {
+.project-button,
+.resume-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,4 +161,29 @@ h5 {
   font-weight: 600;
   color: #396df2;
   background-color: white;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+}
+
+.about h2 {
+  padding-top: 114px;
+  width: 327px;
+}
+
+.about p {
+  line-height: 24px;
+}
+
+.about .icons {
+  margin-left: 10px;
+  height: 45px;
+}
+
+.resume-button {
+  width: 160px;
+  padding: 13px;
 }
