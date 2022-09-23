@@ -20,7 +20,7 @@ body {
   background-image: url("header-shapes mobile.png");
   background-repeat: no-repeat;
   background-size: auto;
-  border: 0px solid #fff;
+  border: 1px solid #fff;
   border-bottom-left-radius: 80px;
   background-color: #fff;
   padding-left: 24px;
@@ -189,7 +189,7 @@ h5 {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 114px;
-  border: 0px solid #fff;
+  border: 1px solid #fff;
   border-top-right-radius: 80px;
 }
 
