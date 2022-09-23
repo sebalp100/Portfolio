@@ -1,5 +1,14 @@
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+html {
+  background-color: #e5e5e5;
+  width: 375px;
+}
+
 body {
-  background-color: #fff;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   overflow-y: scroll;
@@ -11,10 +20,13 @@ body {
   background-image: url("header-shapes mobile.png");
   background-repeat: no-repeat;
   background-size: auto;
-  padding: 24px;
-  margin-bottom: 2em;
-  height: 100vh;
-  border-bottom-left-radius: 10px;
+  border: 0px solid #fff;
+  border-bottom-left-radius: 80px;
+  background-color: #fff;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 114px;
+  height: 604px;
 }
 
 ul {
@@ -25,7 +37,10 @@ header {
   display: flex;
   justify-content: space-between;
   padding-right: 24px;
-  padding-left: 24px;
+  padding-left: 26px;
+  padding-top: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .menu-button {
@@ -35,17 +50,19 @@ header {
 h1 {
   display: flex;
   align-items: center;
-  font-size: 40px;
+  font-size: 42px;
   color: #172b4d;
-  font-weight: bold;
-  margin: 0%;
+  font-weight: 700;
   line-height: 52px;
+  padding-top: 40px;
+  padding-bottom: 12px;
 }
 
-p {
+.headline-intro p {
   padding-top: 0;
   line-height: 22px;
   color: #344563;
+  padding-bottom: 12px;
 }
 
 h2 {
@@ -62,6 +79,7 @@ h3 {
   font-size: 16px;
   margin-top: 0%;
   margin-bottom: 0%;
+  padding-bottom: 12px;
 }
 
 h5 {
@@ -86,14 +104,14 @@ h5 {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   width: 100vw;
   background-color: #e5e5e5;
+  justify-content: center;
 }
 
 .date {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  padding-left: 0%;
-  margin: 0%;
+  padding-bottom: 20px;
 }
 
 .canopy {
@@ -117,24 +135,25 @@ h5 {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  margin-bottom: 4em;
-  padding: 16px;
-  margin-left: 14px;
-  margin-right: 14px;
+  margin-bottom: 75px;
   border-radius: 1rem;
   border: 1px solid #dadadb;
-  height: 552px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding: 16px;
 }
 
 .card1,
 .card3 {
   padding-bottom: 0;
+  height: 552px;
 }
 
 .selection-text {
   font-size: 15px;
   line-height: 24px;
   width: 293px;
+  padding-bottom: 12px;
 }
 
 .work-buttons {
@@ -155,7 +174,7 @@ h5 {
   border-radius: 8px;
   border: 1px solid;
   border-color: #396df2;
-  margin-top: 16px;
+  margin-top: 21px;
   padding: 14px;
   font-size: 17px;
   font-weight: 600;
@@ -166,7 +185,12 @@ h5 {
 .about {
   display: flex;
   flex-direction: column;
-  padding: 22px;
+  background-color: #fff;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 114px;
+  border: 0px solid #fff;
+  border-top-right-radius: 80px;
 }
 
 .about h2 {
