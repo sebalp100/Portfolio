@@ -51,7 +51,8 @@ p {
 h2 {
   font-size: 36px;
   color: #172b4d;
-  padding: 0;
+  padding-bottom: 10px;
+  padding-top: 5px;
   margin: 0;
   line-height: 44px;
 }
@@ -116,17 +117,24 @@ h5 {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  margin-bottom: 6em;
-  padding: 20px;
+  margin-bottom: 4em;
+  padding: 16px;
   margin-left: 14px;
   margin-right: 14px;
   border-radius: 1rem;
+  border: 1px solid #dadadb;
   height: 552px;
+}
+
+.card1,
+.card3 {
+  padding-bottom: 0;
 }
 
 .selection-text {
   font-size: 15px;
   line-height: 24px;
+  width: 293px;
 }
 
 .work-buttons {
@@ -146,7 +154,7 @@ h5 {
   border-radius: 8px;
   border: 1px solid;
   border-color: #396df2;
-  margin-top: 25px;
+  margin-top: 16px;
   padding: 14px;
   font-size: 17px;
   font-weight: 600;
