@@ -208,9 +208,17 @@ h5 {
   padding-top: 21px;
   padding-bottom: 21px;
   border-bottom: 1px solid #dfe1e6;
+  cursor: pointer;
 }
 
 .dropdown-text-no-border {
   border: none;
   padding-bottom: 40px;
+}
+
+.down-arrow,
+.right-arrow {
+  float: right;
+  margin-top: 8px;
+  margin-right: 40px;
 }
