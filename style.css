@@ -184,6 +184,33 @@ h5 {
 }
 
 .resume-button {
-  width: 160px;
+  width: 170px;
   padding: 13px;
+  margin-bottom: 20px;
+}
+
+.about-dropdown {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.language {
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.dropdown-text,
+.dropdown-text-no-border {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.dropdown-text-no-border {
+  border: none;
+  padding-bottom: 40px;
 }
