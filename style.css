@@ -13,8 +13,8 @@ body {
   background-size: auto;
   padding: 24px;
   margin-bottom: 2em;
-  height: 718px;
-  border-bottom-left-radius: 50%;
+  height: 100vh;
+  border-bottom-left-radius: 10px;
 }
 
 ul {
@@ -42,6 +42,13 @@ p {
   padding-top: 0;
   line-height: 22px;
   color: #344563;
+}
+
+h2 {
+  font-size: 36px;
+  color: #172b4d;
+  padding: 0;
+  margin: 0;
 }
 
 h3 {
@@ -79,5 +86,13 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-bottom: 6em;
-  padding: 16px;
+  padding: 20px;
+  margin-left: 14px;
+  margin-right: 14px;
+  border-radius: 1rem;
+}
+
+.selection-text {
+  font-size: 15px;
+  line-height: 24px;
 }
