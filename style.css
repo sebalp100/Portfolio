@@ -17,7 +17,7 @@ body {
 .headline {
   display: flex;
   flex-direction: column;
-  background-image: url("header-shapes mobile.png");
+  background-image: url("background.png");
   background-repeat: no-repeat;
   background-size: auto;
   border: 1px solid #fff;
