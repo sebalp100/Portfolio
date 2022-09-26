@@ -267,3 +267,17 @@ h5 {
   justify-content: center;
   margin-bottom: 215px;
 }
+
+.one {
+  float: left;
+  padding-right: 10px;
+}
+
+.two {
+  float: left;
+  padding-right: 10px;
+}
+
+.three {
+  float: left;
+}
