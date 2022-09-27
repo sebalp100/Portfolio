@@ -245,5 +245,51 @@
         </section>
       </div>
     </main>
+    <section class="bottom-form">
+      <div class="bottom-page">
+        <h2>Contact me</h2>
+        <p class="bottom-p">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+        <form action="https://formspree.io/f/mgeqkbez" method="post">
+          <ul>
+            <li>
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                placeholder="Full Name"
+                required
+                maxlength="30"
+              />
+            </li>
+            <li>
+              <input
+                type="email"
+                id="mail"
+                name="user_email"
+                placeholder="Email Adress"
+                required
+              />
+            </li>
+            <li>
+              <textarea
+                class="text-area"
+                id="msg"
+                name="user_message"
+                placeholder="Write your message here"
+                required
+                maxlength="500"
+              ></textarea>
+            </li>
+            <li>
+              <button class="form-button" type="submit">Get In Touch</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
