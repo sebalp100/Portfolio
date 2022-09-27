@@ -270,7 +270,7 @@ h5 {
   margin-bottom: 215px;
 }
 
-footer {
+.bottom-form {
   display: grid;
   grid-template-columns: 375px;
   grid-template-rows: 1fr;
