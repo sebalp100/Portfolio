@@ -245,7 +245,7 @@
         </section>
       </div>
     </main>
-    <section>
+    <footer>
       <div class="bottom-page">
         <h2>Contact me</h2>
         <p class="bottom-p">
@@ -262,6 +262,7 @@
                 name="user_name"
                 placeholder="Yeremias"
                 required
+                maxlength="30"
               />
             </li>
             <li>
@@ -270,14 +271,16 @@
                 id="mail"
                 name="user_email"
                 placeholder="natajayanj14@gmail.com"
+                required
               />
             </li>
             <li>
-              <textarea
-                class="text-area"
+              <textarea class="text-area"
                 id="msg"
                 name="user_message"
                 placeholder="Write your message here"
+                required
+                maxlength="500"
               ></textarea>
             </li>
             <li>
@@ -286,6 +289,6 @@
           </ul>
         </form>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
