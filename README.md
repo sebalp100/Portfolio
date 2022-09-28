@@ -3,11 +3,13 @@
 # Portfolio: Mobile First Approach
 
 > In this project, we are setting up a portfolio page with the mobile-first approach. We begin by making a toolbar and a header first. Now we add a "works done" and an "about me" section.
+> Finally we are making a responsive desktop version.
 
 ## Built With
 
 - HTML, CSS.
 - Visual Studio Code.
+- Formspree.
 
 ## Getting Started
 
@@ -28,8 +30,15 @@ To get a local copy up and running follow these simple steps.
 
 ## Authors
 
+👤 **Author1**
+
 - GitHub: [@sebalp100](https://github.com/sebalp100)
 - LinkedIn: [Sebastian Martin](https://www.linkedin.com/in/sebastian-martin-956b2724a/)
+
+👤 **Author2**
+
+- GitHub: [@Boku52500](https://github.com/Boku52500)
+- Linkedin: [Giorgi Bokuchava](https://www.linkedin.com/in/giorgi-bokuchava-430252240/)
 
 ## 🤝 Contributing
 
