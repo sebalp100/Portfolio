@@ -397,16 +397,16 @@ textarea {
     padding-top: 25px;
     height: 60px;
     width: 100vw;
-    padding: 0;
+
     justify-content: space-around;
     position: fixed;
-    filter: drop-shadow(0px 0px 16px rgba(64, 83, 252, 0.24));
   }
 
   h1 {
     padding-top: 100px;
     padding-left: 18%;
   }
+
   .menu-button {
     display: none;
   }
@@ -487,6 +487,7 @@ textarea {
   .card8 {
     padding-left: 20px;
   }
+
   .card6 img,
   .card8 img {
     padding-right: 22px;
@@ -512,10 +513,12 @@ textarea {
     font-size: 15px;
     width: 100%;
   }
+
   ul.work-buttons {
     flex-wrap: wrap;
     width: fit-content;
   }
+
   .work-buttons {
     display: flex;
     align-items: center;
@@ -564,6 +567,7 @@ textarea {
   .container .icons {
     padding-left: 0;
   }
+
   .container p {
     font-size: 16px;
     padding-bottom: 12px;
@@ -575,10 +579,6 @@ textarea {
 
   .bottom-p {
     width: 569px;
-  }
-
-  .bottom-page {
-    padding-top: 40px;
   }
 
   input,
@@ -593,6 +593,7 @@ textarea {
   }
 
   .bottom-page {
+    padding-top: 40px;
     background-image: url(form.svg);
     background-size: 85%;
     background-position-x: 75px;
