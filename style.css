@@ -399,6 +399,11 @@ textarea {
 
   .logo {
     padding-top: 25px;
+    transition: transform 1s;
+  }
+
+  .logo:hover {
+    transform: scale(1.2);
   }
 
   header {
@@ -428,6 +433,11 @@ textarea {
 
   .menu-links {
     padding-right: 20px;
+    transition: transform 0.5s;
+  }
+
+  .menu-links:hover {
+    transform: scale(1.2);
   }
 
   .desktop-links {
