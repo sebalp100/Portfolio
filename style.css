@@ -11,6 +11,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .headline {
@@ -367,7 +368,7 @@ textarea {
   .headline,
   .centered,
   .centered-headline {
-    width: 99.9vw;
+    width: 100%;
     border: none;
     background-size: 98%;
     height: 98vh;
@@ -382,9 +383,9 @@ textarea {
 
   .centered {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 100%;
     grid-template-rows: 1fr;
-    width: 100vw;
+    width: 100%;
     background-color: #e5e5e5;
     justify-content: center;
   }
@@ -396,7 +397,7 @@ textarea {
   header {
     padding-top: 25px;
     height: 60px;
-    width: 100vw;
+    width: 100%;
     justify-content: space-around;
     position: fixed;
   }
@@ -573,7 +574,7 @@ textarea {
   }
 
   .bottom-form {
-    grid-template-columns: 100vw;
+    grid-template-columns: 100%;
   }
 
   .bottom-p {
