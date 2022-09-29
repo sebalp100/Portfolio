@@ -3,6 +3,7 @@
 # Portfolio: Mobile First Approach
 
 > In this project, we are setting up a portfolio page with the mobile-first approach. We begin by making a toolbar and a header first. Now we add a "works done" and an "about me" section.
+> Finally we are making a responsive desktop version.
 
 ## Built With
 
