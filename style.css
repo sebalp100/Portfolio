@@ -5,6 +5,7 @@
 
 html {
   background-color: #e5e5e5;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,6 +13,11 @@ body {
   font-style: normal;
   overflow-y: scroll;
   overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+main {
+  box-sizing: border-box;
 }
 
 .headline {
@@ -275,7 +281,7 @@ h5 {
   display: grid;
   grid-template-columns: 375px;
   grid-template-rows: 1fr;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   background-color: #e5e5e5;
   box-sizing: border-box;
@@ -375,6 +381,7 @@ textarea {
     border-bottom-left-radius: 80px;
     padding: 0;
     margin-bottom: 60px;
+    box-sizing: border-box;
   }
 
   .headline {
