@@ -399,6 +399,11 @@ textarea {
 
   .logo {
     padding-top: 25px;
+    transition: transform 1s;
+  }
+
+  .logo:hover {
+    transform: scale(1.2);
   }
 
   header {
@@ -428,6 +433,11 @@ textarea {
 
   .menu-links {
     padding-right: 20px;
+    transition: transform 0.5s;
+  }
+
+  .menu-links:hover {
+    transform: scale(1.2);
   }
 
   .desktop-links {
@@ -484,6 +494,11 @@ textarea {
   .poster {
     max-width: 50%;
     padding: 20px 2px;
+    transition: transform 1s;
+  }
+
+  .poster:hover {
+    transform: translate(-15px, 1px);
   }
 
   .tag {
@@ -561,6 +576,14 @@ textarea {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
+  }
+
+  .rotate {
+    transition: transform 1s;
+  }
+
+  .rotate:hover {
+    transform: rotate(-20deg);
   }
 
   .resume-button {
