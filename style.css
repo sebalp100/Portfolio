@@ -494,6 +494,11 @@ textarea {
   .poster {
     max-width: 50%;
     padding: 20px 2px;
+    transition: transform 1s;
+  }
+
+  .poster:hover {
+    transform: translate(-15px, 1px);
   }
 
   .tag {
@@ -571,6 +576,14 @@ textarea {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
+  }
+
+  .rotate {
+    transition: transform 1s;
+  }
+
+  .rotate:hover {
+    transform: rotate(-20deg);
   }
 
   .resume-button {
