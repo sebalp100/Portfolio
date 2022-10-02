@@ -4,12 +4,14 @@
 
 > In this project, we are setting up a portfolio page with the mobile-first approach. We begin by making a toolbar and a header first. Now we add a "works done" and an "about me" section.
 > Finally we are making a responsive desktop version.
+> You can find the final version here: https://sebalp100.github.io/Portfolio/
 
 ## Built With
 
 - HTML, CSS.
 - Visual Studio Code.
 - Formspree.
+- Github Pages
 
 ## Getting Started
 
@@ -27,6 +29,7 @@ To get a local copy up and running follow these simple steps.
 - On your VSCode hit "Open a new repository" and paste the URL.
 - Select the destination folder.
 - All the files should be cloned to your local folder and are ready to be used.
+- You can also check https://sebalp100.github.io/Portfolio/ and you can see the website online. 
 
 ## Authors
 
