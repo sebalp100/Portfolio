@@ -348,6 +348,10 @@ textarea {
   width: 140px;
 }
 
+.form-button:focus {
+  outline: #ffffff;
+}
+
 .project-button:focus {
   outline: #0000ee;
 }
