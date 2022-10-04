@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple steps.
 - On your VSCode hit "Open a new repository" and paste the URL.
 - Select the destination folder.
 - All the files should be cloned to your local folder and are ready to be used.
-- You can also check https://sebalp100.github.io/Portfolio/ and you can see the website online. 
+- You can also check https://sebalp100.github.io/Portfolio/ and you can see the website online.
 
 ## Authors
 
@@ -42,6 +42,11 @@ To get a local copy up and running follow these simple steps.
 
 - GitHub: [@Boku52500](https://github.com/Boku52500)
 - Linkedin: [Giorgi Bokuchava](https://www.linkedin.com/in/giorgi-bokuchava-430252240/)
+
+👤 **Author3**
+
+- GitHub: [@Sparktan24](https://github.com/Sparktan24)
+- Linkedin: [Jesus Molina](https://www.linkedin.com/in/jesus-molina-2b104424a/)
 
 ## 🤝 Contributing
 
