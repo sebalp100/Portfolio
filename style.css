@@ -348,6 +348,10 @@ textarea {
   width: 140px;
 }
 
+.project-button:focus {
+  color: #396df2;
+}
+
 .project-button:hover,
 .resume-button:hover {
   border-color: #4958dd;
