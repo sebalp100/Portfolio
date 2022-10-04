@@ -83,7 +83,7 @@ h2 {
 }
 
 h3 {
-  color: #7f8cff;
+  color: #4d5bd9;
   font-size: 16px;
   margin-top: 0%;
   margin-bottom: 0%;
@@ -129,7 +129,7 @@ h5 {
 }
 
 .year {
-  color: #7a869a;
+  color: #454b54;
   font-size: 13px;
   font-weight: 600;
   list-style: disc;
@@ -344,7 +344,7 @@ textarea {
 
 .form-button {
   margin-bottom: 40px;
-  color: #6070ff;
+  color: #5564eb;
   width: 140px;
 }
 
