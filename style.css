@@ -349,7 +349,7 @@ textarea {
 }
 
 .project-button:focus {
-  color: #396df2;
+  outline: #0000ee;
 }
 
 .project-button:hover,
