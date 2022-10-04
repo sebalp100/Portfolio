@@ -349,11 +349,11 @@ textarea {
 }
 
 .form-button:focus {
-  outline: #ffffff;
+  outline: #fff;
 }
 
 .project-button:focus {
-  outline: #0000ee;
+  outline: #00e;
 }
 
 .project-button:hover,
