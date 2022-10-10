@@ -59,13 +59,13 @@ header {
   cursor: pointer;
 }
 
-.menu-button.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
 .menu-button.active .bar:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
   background-color: #fff;
+}
+
+.menu-button.active .bar:nth-child(2) {
+  opacity: 0;
 }
 
 .menu-button.active .bar:nth-child(3) {
@@ -451,9 +451,11 @@ textarea {
     margin-bottom: 60px;
     box-sizing: border-box;
   }
+
   .menu-pop {
     display: none;
   }
+
   .headline {
     background-image: url(Headerbg.svg);
   }

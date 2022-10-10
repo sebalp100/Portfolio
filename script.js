@@ -1,6 +1,6 @@
-let menu = document.querySelector(".menu-button");
-let popUp = document.querySelector(".pop");
-let scrollb = document.querySelector("body");
+const menu = document.querySelector(".menu-button");
+const popUp = document.querySelector(".pop");
+const scrollb = document.querySelector("body");
 
 menu.addEventListener("click", () => {
   menu.classList.toggle("active");
