@@ -11,4 +11,5 @@ menu.addEventListener('click', () => {
 document.querySelectorAll('.menu-links').forEach((i) => i.addEventListener('click', () => {
   menu.classList.remove('active');
   popUp.classList.remove('active');
-  scrollb.classList.remove('active');}));
+  scrollb.classList.remove('active');
+}));
