@@ -59,6 +59,16 @@ header {
   cursor: pointer;
 }
 
+.bar {
+  display: block;
+  width: 24px;
+  height: 3px;
+  margin: 4px auto;
+  background-color: #6070ff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 .menu-button.active .bar:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
   background-color: #fff;
@@ -71,16 +81,6 @@ header {
 .menu-button.active .bar:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
   background-color: #fff;
-}
-
-.bar {
-  display: block;
-  width: 24px;
-  height: 3px;
-  margin: 4px auto;
-  background-color: #6070ff;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 h1 {
