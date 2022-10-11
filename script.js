@@ -191,3 +191,75 @@ function createModal(projectName) {
   source.appendChild(buttonText2);
   document.getElementById("newDiv").appendChild(source);
 };
+
+function createModalDesktop(projectName) {
+  let h2 = document.createElement("h2");
+  h2.className = "modalh2";
+  let text = document.createTextNode(projectName.name);
+  h2.appendChild(text);
+  document.getElementById("modals2").appendChild(h2);
+
+  let xbutt = document.createElement("img");
+  xbutt.src = "images/x.png";
+  xbutt.className = "xButt";
+  h2.append(xbutt);
+
+  let subtext = document.createElement("p");
+  subtext.className = "date";
+  let posit = document.createTextNode(projectName.position);
+  subtext.appendChild(posit);
+  document.getElementById("modals2").appendChild(subtext);
+
+  let image = document.createElement("img");
+  image.className = "main-poster";
+  image.src = projectName.image;
+  document.getElementById("modals2").appendChild(image);
+
+  let newDiv1 = document.createElement("div");
+  newDiv1.id = "newDiv1";
+  document.getElementById("modals2").appendChild(newDiv1);
+
+  let subtext2 = document.createElement("p");
+  subtext2.className = "date";
+  let descript = document.createTextNode(projectName.description);
+  subtext2.appendChild(descript);
+  newDiv1.append(subtext2);
+
+  let newDiv2 = document.createElement("div");
+  newDiv2.id = "newDiv2";
+  document.getElementById("newDiv1").appendChild(newDiv2);
+
+  let techno1 = document.createElement("button");
+  techno1.className = "techno-button";
+  let technoIcon1 = document.createTextNode(projectName.technologies[0]);
+  techno1.appendChild(technoIcon1);
+  newDiv2.append(techno1)
+
+  let techno2 = document.createElement("button");
+  techno2.className = "techno-button";
+  let technoIcon2 = document.createTextNode(projectName.technologies[1]);
+  techno2.appendChild(technoIcon2);
+  newDiv2.append(techno2);
+
+  let techno3 = document.createElement("button");
+  techno3.className = "techno-button";
+  let technoIcon3 = document.createTextNode(projectName.technologies[2]);
+  techno3.appendChild(technoIcon3);
+  newDiv2.append(techno3);
+
+  let newDiv = document.createElement("div");
+  newDiv.id = "newDiv";
+  document.getElementById("modals2").appendChild(newDiv);
+
+  let live = document.createElement("button");
+  live.className = "project-button source";
+  let buttonText = document.createTextNode("see live");
+  live.appendChild(buttonText);
+  document.getElementById("newDiv").appendChild(live);
+
+  let source = document.createElement("button");
+  source.className = "project-button source";
+  let buttonText2 = document.createTextNode("see source");
+  source.appendChild(buttonText2);
+  document.getElementById("newDiv").appendChild(source);
+}
