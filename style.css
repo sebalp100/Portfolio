@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -27,7 +27,7 @@ main {
 .headline {
   display: flex;
   flex-direction: column;
-  background-image: url("background.svg");
+  background-image: url('background.svg');
   background-repeat: no-repeat;
   background-size: auto;
   border: 1px solid #fff;
@@ -59,6 +59,20 @@ header {
   cursor: pointer;
 }
 
+.menu-button.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-button.active .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+  background-color: #fff;
+}
+
+.menu-button.active .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+  background-color: #fff;
+}
+
 .bar {
   display: block;
   width: 24px;
@@ -67,20 +81,6 @@ header {
   background-color: #6070ff;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
-
-.menu-button.active .bar:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-  background-color: #fff;
-}
-
-.menu-button.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-button.active .bar:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-  background-color: #fff;
 }
 
 h1 {
@@ -319,7 +319,7 @@ h5 {
   display: flex;
   flex-direction: column;
   background-color: #6070ff;
-  background-image: url("background2.png");
+  background-image: url('background2.png');
   background-repeat: no-repeat;
   background-position-x: 150px;
   background-position-y: 18px;
@@ -351,7 +351,7 @@ h5 {
 
 input,
 textarea {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 17px;
   color: #172b4d;
   width: 327px;
@@ -438,6 +438,124 @@ textarea {
   display: none;
 }
 
+#modals {
+  display: grid;
+  grid-template-columns: 95vw;
+  grid-template-rows: 1fr 1fr;
+  height: 95vh;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 16px;
+  width: 91%;
+  margin-left: 4.5%;
+  margin-bottom: 10px;
+  margin-top: 3%;
+  position: fixed;
+  top: 0;
+}
+
+#modals2 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 16px;
+  width: 98%;
+  margin-left: 1%;
+  margin-bottom: 10px;
+  margin-top: 2%;
+  position: fixed;
+  top: 0;
+}
+
+#modals h2 {
+  padding-left: 11%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 32px;
+}
+
+#modals2 h2 {
+  padding-left: 3%;
+  padding-top: 3%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newSection {
+  width: 100vw;
+  height: 100vh;
+}
+
+.xButt {
+  margin-right: 10%;
+  cursor: pointer;
+}
+
+#modals h2 {
+  padding-bottom: 10px;
+}
+
+#modals p {
+  padding-left: 11%;
+  padding-top: 12px;
+  font-size: 15px;
+  padding-right: 11%;
+}
+
+#modals2 p {
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 12px;
+}
+
+#modals img {
+  padding-left: 9%;
+}
+
+.main-poster {
+  padding-left: 3%;
+  padding-right: 3%;
+  max-height: 400px;
+}
+
+#newDiv2 {
+  display: flex;
+  gap: 10px;
+  padding-left: 11%;
+}
+
+.techno-button {
+  list-style: none;
+  padding: 4px 12px;
+  border-radius: 8px;
+  background-color: #ebebff;
+  border: #ebebff;
+  color: #6070ff;
+}
+
+.techno-button > li {
+  padding-left: 0;
+}
+
+#newDiv {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.main-poster {
+  height: 500px;
+}
+
 @media only screen and (min-width: 768px) {
   .headline,
   .centered,
@@ -451,11 +569,9 @@ textarea {
     margin-bottom: 60px;
     box-sizing: border-box;
   }
-
   .menu-pop {
     display: none;
   }
-
   .headline {
     background-image: url(Headerbg.svg);
   }
@@ -483,11 +599,10 @@ textarea {
   }
 
   header {
-    padding-top: 25px;
+    padding-top: 8px;
     height: 60px;
     width: 100%;
     justify-content: space-around;
-    position: fixed;
   }
 
   h1 {
