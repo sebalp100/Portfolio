@@ -457,7 +457,7 @@ textarea {
 #modals2 {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 94vh;
   justify-content: center;
   background-color: #fff;
   border-radius: 16px;
@@ -465,6 +465,7 @@ textarea {
   margin-left: 1%;
   margin-bottom: 10px;
   margin-top: 2%;
+  margin-bottom: 2%;
   position: fixed;
   top: 0;
 }
@@ -481,7 +482,7 @@ textarea {
 
 #modals2 h2 {
   padding-left: 3%;
-  padding-top: 3%;
+  padding-bottom: 0;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -526,10 +527,17 @@ textarea {
   max-height: 400px;
 }
 
-#newDiv2 {
+#newDiv2,
+#newDivDeskt {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   padding-left: 11%;
+  max-width: 300px;
+}
+
+#newDivDeskt {
+  padding-left: 0;
 }
 
 .techno-button {
@@ -552,8 +560,20 @@ textarea {
   margin-bottom: 20px;
 }
 
-.main-poster {
-  height: 500px;
+#newDiv1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+#newDiv1 p {
+  padding-left: 4%;
+}
+
+.mainBack.active {
+  opacity: 20%;
+  filter: blur(4px);
 }
 
 @media only screen and (min-width: 768px) {
@@ -827,5 +847,21 @@ textarea {
     background-size: 85%;
     background-position-x: 75px;
     background-position-y: 79px;
+  }
+
+  .xButt {
+    margin-right: 4%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #newDiv1 p {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #newDiv1 p {
+    font-size: 15px;
   }
 }
