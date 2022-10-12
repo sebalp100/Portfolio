@@ -634,6 +634,7 @@ textarea {
 
 .stop-scroll {
   overflow-y: hidden;
+  background-color: rgba(0, 0, 0, 30%);
 }
 
 .liveIcon,

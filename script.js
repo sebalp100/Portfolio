@@ -20,7 +20,7 @@ const projectOne = {
   image: 'images/nature.svg',
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  technologies: ['html', 'css', 'javascript', "Ruby on rails"],
+  technologies: ['html', 'css', 'javascript', 'ruby', 'github', 'bootstraps'],
   livelink: 'link',
   sourcelink: 'link',
 };
@@ -238,6 +238,24 @@ function createModal(projectName) {
   techno3.appendChild(technoIcon3);
   newDiv2.append(techno3);
 
+  const techno4 = document.createElement('button');
+  techno4.className = 'techno-button';
+  const technoIcon4 = document.createTextNode(projectName.technologies[3]);
+  techno4.appendChild(technoIcon4);
+  newDiv2.append(techno4);
+
+  const techno5 = document.createElement('button');
+  techno5.className = 'techno-button';
+  const technoIcon5 = document.createTextNode(projectName.technologies[4]);
+  techno5.appendChild(technoIcon5);
+  newDiv2.append(techno5);
+
+  const techno6 = document.createElement('button');
+  techno6.className = 'techno-button';
+  const technoIcon6 = document.createTextNode(projectName.technologies[5]);
+  techno6.appendChild(technoIcon6);
+  newDiv2.append(techno6);
+
   const newDiv = document.createElement('div');
   newDiv.id = 'newDiv';
   bottomDiv3.append(newDiv);
@@ -276,11 +294,13 @@ opened2.addEventListener('click', () => {
   newSection.appendChild(modal);
   body.appendChild(newSection);
   document.body.classList.add('stop-scroll');
+  document.body.classList.add('dark-backg');
   createModal(projectTwo);
   const closed = document.querySelector('.xButt');
   closed.addEventListener('click', () => {
     body.removeChild(newSection);
     document.body.classList.remove('stop-scroll');
+    document.body.classList.remove('dark-backg');
   });
 });
 
