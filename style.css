@@ -520,6 +520,11 @@ textarea {
   cursor: pointer;
 }
 
+.mainDiv p {
+  font-size: 15px;
+  padding-bottom: 16px;
+}
+
 #modals p {
   padding-left: 11%;
   padding-top: 12px;
@@ -604,11 +609,6 @@ textarea {
   display: flex;
   flex-direction: column;
   padding: 16px 16px;
-}
-
-.mainDiv p {
-  font-size: 15px;
-  padding-bottom: 16px;
 }
 
 #newDivOriginal {

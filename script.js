@@ -61,12 +61,11 @@ projectEight.position = 'UBER Lead Developer 2018';
 
 const body = document.querySelector('body');
 
-const listPosition = ["CANOPY", "Full Stack Dev", "2015", "FACEBOOK", "Uber", "Lead Developer", "2018"];
+const listPosition = ['CANOPY', 'Full Stack Dev', '2015', 'FACEBOOK', 'Uber', 'Lead Developer', '2018'];
 
-let arrayCards = [projectOne, projectTwo, projectThree, projectFour];
+const arrayCards = [projectOne, projectTwo, projectThree, projectFour];
 
-for (let i = 0; i < arrayCards.length; i++) {
-
+for (let i = 0; i < arrayCards.length; i += 1) {
   const mainDiv = document.createElement('div');
   mainDiv.classList = 'mainDiv';
   document.getElementById('worksNew').appendChild(mainDiv);
@@ -166,8 +165,8 @@ function createModal(projectName) {
   xbutt.className = 'xButt';
   h2.append(xbutt);
 
-  const modalDiv1 = document.createElement('div')
-  modalDiv1.className = "modalDiv1";
+  const modalDiv1 = document.createElement('div');
+  modalDiv1.className = 'modalDiv1';
   document.getElementById('modals').appendChild(modalDiv1);
 
   const subtextModal = document.createElement('ul');
@@ -190,20 +189,19 @@ function createModal(projectName) {
   modalDiv1.append(subtextYear2);
 
   const imageDiv = document.createElement('div');
-  imageDiv.className = "imageDiv";
+  imageDiv.className = 'imageDiv';
   document.getElementById('modals').appendChild(imageDiv);
-
 
   const image = document.createElement('img');
   image.src = projectName.image;
   imageDiv.append(image);
 
   const bottomDiv = document.createElement('div');
-  bottomDiv.className = "bottomDiv";
+  bottomDiv.className = 'bottomDiv';
   document.getElementById('modals').appendChild(bottomDiv);
 
   const bottomDiv2 = document.createElement('div');
-  bottomDiv2.className = "bottomDiv2";
+  bottomDiv2.className = 'bottomDiv2';
   bottomDiv.append(bottomDiv2);
 
   const subtext2 = document.createElement('p');
@@ -213,12 +211,12 @@ function createModal(projectName) {
   bottomDiv2.append(subtext2);
 
   const bottomDiv3 = document.createElement('div');
-  bottomDiv3.className = "bottomDiv3";
+  bottomDiv3.className = 'bottomDiv3';
   bottomDiv.append(bottomDiv3);
 
   const newDiv2 = document.createElement('div');
   newDiv2.id = 'newDiv2';
-  bottomDiv3.append(newDiv2)
+  bottomDiv3.append(newDiv2);
 
   const techno1 = document.createElement('button');
   techno1.className = 'techno-button';
@@ -267,8 +265,8 @@ function createModal(projectName) {
   document.getElementById('newDiv').appendChild(live);
 
   const liveIcon = document.createElement('img');
-  liveIcon.className = "liveIcon";
-  liveIcon.src = "images/Iconlive.png"
+  liveIcon.className = 'liveIcon';
+  liveIcon.src = 'images/Iconlive.png';
   live.append(liveIcon);
 
   const source = document.createElement('button');
@@ -278,12 +276,10 @@ function createModal(projectName) {
   document.getElementById('newDiv').appendChild(source);
 
   const sourceIcon = document.createElement('img');
-  sourceIcon.className = "sourceIcon";
-  sourceIcon.src = "images/Vectorsource.png"
+  sourceIcon.className = 'sourceIcon';
+  sourceIcon.src = 'images/Vectorsource.png';
   source.append(sourceIcon);
 }
-
-
 
 const opened2 = document.querySelector('.project-button1');
 opened2.addEventListener('click', () => {
