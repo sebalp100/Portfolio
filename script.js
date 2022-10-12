@@ -61,142 +61,6 @@ projectEight.position = 'UBER Lead Developer 2018';
 
 const body = document.querySelector('body');
 
-const opened = document.querySelector('.projButtOne');
-opened.addEventListener('click', () => {
-  const newSection = document.createElement('div');
-  newSection.id = 'modals';
-  const modal = document.createElement('div');
-  modal.className = 'modal';
-  newSection.appendChild(modal);
-  body.appendChild(newSection);
-  createModal(projectOne);
-  const closed = document.querySelector('.xButt');
-  closed.addEventListener('click', () => {
-    body.removeChild(newSection);
-  });
-});
-
-const opened2 = document.querySelector('.projButtTwo');
-opened2.addEventListener('click', () => {
-  const newSection = document.createElement('div');
-  newSection.id = 'modals';
-  const modal = document.createElement('div');
-  modal.className = 'modal';
-  newSection.appendChild(modal);
-  body.appendChild(newSection);
-  createModal(projectTwo);
-  const closed = document.querySelector('.xButt');
-  closed.addEventListener('click', () => {
-    body.removeChild(newSection);
-  });
-});
-
-const opened3 = document.querySelector('.projButtThree');
-opened3.addEventListener('click', () => {
-  const newSection = document.createElement('div');
-  newSection.id = 'modals';
-  const modal = document.createElement('div');
-  modal.className = 'modal';
-  newSection.appendChild(modal);
-  body.appendChild(newSection);
-  createModal(projectThree);
-  const closed = document.querySelector('.xButt');
-  closed.addEventListener('click', () => {
-    body.removeChild(newSection);
-  });
-});
-
-const opened4 = document.querySelector('.projButtFour');
-opened4.addEventListener('click', () => {
-  const newSection = document.createElement('div');
-  newSection.id = 'modals';
-  const modal = document.createElement('div');
-  modal.className = 'modal';
-  newSection.appendChild(modal);
-  body.appendChild(newSection);
-  createModal(projectFour);
-  const closed = document.querySelector('.xButt');
-  closed.addEventListener('click', () => {
-    body.removeChild(newSection);
-  });
-});
-
-const opened5 = document.querySelector('.projButtFive');
-opened5.addEventListener('click', () => {
-  const newSection2 = document.createElement('div');
-  newSection2.id = 'modals2';
-  const modal = document.createElement('div');
-  const mainBack = document.querySelector('main');
-  mainBack.className = 'mainBack';
-  modal.className = 'modal';
-  newSection2.appendChild(modal);
-  body.appendChild(newSection2);
-  createModalDesktop(projectFive);
-  mainBack.classList.toggle('active');
-  const closed = document.querySelector('.xButt');
-  closed.addEventListener('click', () => {
-    body.removeChild(newSection2);
-    mainBack.classList.remove('active');
-  });
-});
-
-const opened6 = document.querySelector('.projButtSix');
-opened6.addEventListener('click', () => {
-  const newSection2 = document.createElement('div');
-  newSection2.id = 'modals2';
-  const modal = document.createElement('div');
-  const mainBack = document.querySelector('main');
-  mainBack.className = 'mainBack';
-  modal.className = 'modal';
-  newSection2.appendChild(modal);
-  body.appendChild(newSection2);
-  createModalDesktop(projectSix);
-  mainBack.classList.toggle('active');
-  const closed = document.querySelector('.xButt');
-  closed.addEventListener('click', () => {
-    body.removeChild(newSection2);
-    mainBack.classList.remove('active');
-  });
-});
-
-const opened7 = document.querySelector('.projButtSeven');
-opened7.addEventListener('click', () => {
-  const newSection2 = document.createElement('div');
-  newSection2.id = 'modals2';
-  const modal = document.createElement('div');
-  const mainBack = document.querySelector('main');
-  mainBack.className = 'mainBack';
-  modal.className = 'modal';
-  newSection2.appendChild(modal);
-  body.appendChild(newSection2);
-  createModalDesktop(projectSeven);
-  mainBack.classList.toggle('active');
-  const closed = document.querySelector('.xButt');
-  closed.addEventListener('click', () => {
-    body.removeChild(newSection2);
-    mainBack.classList.remove('active');
-  });
-});
-
-const opened8 = document.querySelector('.projButtEight');
-opened8.addEventListener('click', () => {
-  const newSection2 = document.createElement('div');
-  newSection2.id = 'modals2';
-  const modal = document.createElement('div');
-  const mainBack = document.querySelector('main');
-  mainBack.className = 'mainBack';
-  modal.className = 'modal';
-  newSection2.appendChild(modal);
-  body.appendChild(newSection2);
-  createModalDesktop(projectEight);
-  mainBack.classList.toggle('active');
-  const closed = document.querySelector('.xButt');
-  closed.addEventListener('click', () => {
-    body.removeChild(newSection2);
-    mainBack.classList.remove('active');
-  });
-});
-
 function createModal(projectName) {
   const h2 = document.createElement('h2');
   h2.className = 'modalh2';
@@ -353,3 +217,139 @@ function createModalDesktop(projectName) {
   source.appendChild(buttonText2);
   document.getElementById('newDiv').appendChild(source);
 }
+
+const opened = document.querySelector('.projButtOne');
+opened.addEventListener('click', () => {
+  const newSection = document.createElement('div');
+  newSection.id = 'modals';
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+  newSection.appendChild(modal);
+  body.appendChild(newSection);
+  createModal(projectOne);
+  const closed = document.querySelector('.xButt');
+  closed.addEventListener('click', () => {
+    body.removeChild(newSection);
+  });
+});
+
+const opened2 = document.querySelector('.projButtTwo');
+opened2.addEventListener('click', () => {
+  const newSection = document.createElement('div');
+  newSection.id = 'modals';
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+  newSection.appendChild(modal);
+  body.appendChild(newSection);
+  createModal(projectTwo);
+  const closed = document.querySelector('.xButt');
+  closed.addEventListener('click', () => {
+    body.removeChild(newSection);
+  });
+});
+
+const opened3 = document.querySelector('.projButtThree');
+opened3.addEventListener('click', () => {
+  const newSection = document.createElement('div');
+  newSection.id = 'modals';
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+  newSection.appendChild(modal);
+  body.appendChild(newSection);
+  createModal(projectThree);
+  const closed = document.querySelector('.xButt');
+  closed.addEventListener('click', () => {
+    body.removeChild(newSection);
+  });
+});
+
+const opened4 = document.querySelector('.projButtFour');
+opened4.addEventListener('click', () => {
+  const newSection = document.createElement('div');
+  newSection.id = 'modals';
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+  newSection.appendChild(modal);
+  body.appendChild(newSection);
+  createModal(projectFour);
+  const closed = document.querySelector('.xButt');
+  closed.addEventListener('click', () => {
+    body.removeChild(newSection);
+  });
+});
+
+const opened5 = document.querySelector('.projButtFive');
+opened5.addEventListener('click', () => {
+  const newSection2 = document.createElement('div');
+  newSection2.id = 'modals2';
+  const modal = document.createElement('div');
+  const mainBack = document.querySelector('main');
+  mainBack.className = 'mainBack';
+  modal.className = 'modal';
+  newSection2.appendChild(modal);
+  body.appendChild(newSection2);
+  createModalDesktop(projectFive);
+  mainBack.classList.toggle('active');
+  const closed = document.querySelector('.xButt');
+  closed.addEventListener('click', () => {
+    body.removeChild(newSection2);
+    mainBack.classList.remove('active');
+  });
+});
+
+const opened6 = document.querySelector('.projButtSix');
+opened6.addEventListener('click', () => {
+  const newSection2 = document.createElement('div');
+  newSection2.id = 'modals2';
+  const modal = document.createElement('div');
+  const mainBack = document.querySelector('main');
+  mainBack.className = 'mainBack';
+  modal.className = 'modal';
+  newSection2.appendChild(modal);
+  body.appendChild(newSection2);
+  createModalDesktop(projectSix);
+  mainBack.classList.toggle('active');
+  const closed = document.querySelector('.xButt');
+  closed.addEventListener('click', () => {
+    body.removeChild(newSection2);
+    mainBack.classList.remove('active');
+  });
+});
+
+const opened7 = document.querySelector('.projButtSeven');
+opened7.addEventListener('click', () => {
+  const newSection2 = document.createElement('div');
+  newSection2.id = 'modals2';
+  const modal = document.createElement('div');
+  const mainBack = document.querySelector('main');
+  mainBack.className = 'mainBack';
+  modal.className = 'modal';
+  newSection2.appendChild(modal);
+  body.appendChild(newSection2);
+  createModalDesktop(projectSeven);
+  mainBack.classList.toggle('active');
+  const closed = document.querySelector('.xButt');
+  closed.addEventListener('click', () => {
+    body.removeChild(newSection2);
+    mainBack.classList.remove('active');
+  });
+});
+
+const opened8 = document.querySelector('.projButtEight');
+opened8.addEventListener('click', () => {
+  const newSection2 = document.createElement('div');
+  newSection2.id = 'modals2';
+  const modal = document.createElement('div');
+  const mainBack = document.querySelector('main');
+  mainBack.className = 'mainBack';
+  modal.className = 'modal';
+  newSection2.appendChild(modal);
+  body.appendChild(newSection2);
+  createModalDesktop(projectEight);
+  mainBack.classList.toggle('active');
+  const closed = document.querySelector('.xButt');
+  closed.addEventListener('click', () => {
+    body.removeChild(newSection2);
+    mainBack.classList.remove('active');
+  });
+});
