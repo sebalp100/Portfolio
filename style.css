@@ -477,7 +477,7 @@ textarea {
   align-items: center;
   justify-content: space-between;
   font-size: 32px;
-  padding-bottom: 10px;
+  padding-bottom: 0;
 }
 
 #modals2 h2 {
@@ -511,10 +511,6 @@ textarea {
   padding-left: 3%;
   padding-right: 3%;
   font-size: 12px;
-}
-
-#modals img {
-  padding-left: 9%;
 }
 
 .main-poster {
@@ -570,6 +566,48 @@ textarea {
 .mainBack.active {
   opacity: 20%;
   filter: blur(4px);
+}
+
+.worksNew {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+
+.mainDiv {
+  margin-bottom: 100px;
+  background-color: white;
+  border-radius: 16px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px;
+}
+
+.mainDiv p {
+  font-size: 15px;
+  padding-bottom: 16px;
+}
+
+#newDivOriginal {
+  display: flex;
+  gap: 10px;
+}
+
+.ruby {
+  display: none;
+}
+
+.modalDiv1 {
+  display: flex;
+  gap: 10px;
+}
+
+.imageDiv {
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 768px) {
@@ -849,6 +887,23 @@ textarea {
 
   .xButt {
     margin-right: 4%;
+  }
+
+  .mainDiv {
+    flex-direction: row;
+    gap: 2%;
+  }
+
+  .mainDiv img {
+    max-width: 60%;
+  }
+
+  .ruby {
+    display: flex;
+  }
+
+  #newDivOriginal {
+    flex-wrap: wrap;
   }
 }
 
