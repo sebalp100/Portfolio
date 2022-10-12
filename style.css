@@ -156,12 +156,18 @@ h5 {
   font-weight: 600;
 }
 
-.year {
+.year,
+.year2 {
   color: #454b54;
   font-size: 13px;
   font-weight: 600;
   list-style: disc;
   padding-right: 2em;
+}
+
+.year2 {
+  padding-right: 0%;
+  padding-top: 3px;
 }
 
 .card1,
@@ -201,6 +207,10 @@ h5 {
 }
 
 .project-button,
+.project-button1,
+.project-button2,
+.project-button3,
+.project-button-source,
 .resume-button,
 .form-button {
   display: flex;
@@ -217,6 +227,11 @@ h5 {
   font-weight: 600;
   color: #396df2;
   background-color: white;
+}
+
+.project-button-source {
+  padding: 5px 60px;
+  font-size: 12px;
 }
 
 .about {
@@ -385,6 +400,9 @@ textarea {
 }
 
 .project-button:hover,
+.project-button1:hover,
+.project-button2:hover,
+.project-button3:hover,
 .resume-button:hover {
   border-color: #4958dd;
   color: white;
@@ -442,16 +460,18 @@ textarea {
   display: grid;
   grid-template-columns: 95vw;
   grid-template-rows: 1fr 1fr;
-  height: 95vh;
+  height: 100vh;
   justify-content: center;
   background-color: #fff;
   border-radius: 16px;
   width: 91%;
   margin-left: 4.5%;
   margin-bottom: 10px;
-  margin-top: 3%;
+  margin-top: 1%;
   position: fixed;
   top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 #modals2 {
@@ -470,7 +490,7 @@ textarea {
 }
 
 #modals h2 {
-  padding-left: 11%;
+  padding-left: 6%;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -603,11 +623,22 @@ textarea {
 .modalDiv1 {
   display: flex;
   gap: 10px;
+  padding-left: 6%;
 }
 
 .imageDiv {
   display: flex;
   flex-direction: column;
+  margin: 0 5%;
+}
+
+.stop-scroll {
+  overflow-y: hidden;
+}
+
+.liveIcon,
+.sourceIcon {
+  padding-left: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -902,8 +933,24 @@ textarea {
     display: flex;
   }
 
+  #newDiv {
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
   #newDivOriginal {
     flex-wrap: wrap;
+  }
+
+  .bottomDiv {
+    display: grid;
+    grid-template-columns: 66% 30%;
+    margin-top: 20px;
+  }
+
+  .bottomDiv3 {
+    margin-left: -10%;
   }
 }
 

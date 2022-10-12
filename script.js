@@ -65,13 +65,14 @@ const listPosition = ["CANOPY", "Full Stack Dev", "2015", "FACEBOOK", "Uber", "L
 
 let arrayCards = [projectOne, projectTwo, projectThree, projectFour];
 
-function createCard(arrayCards) {
+for (let i = 0; i < arrayCards.length; i++) {
+
   const mainDiv = document.createElement('div');
   mainDiv.classList = 'mainDiv';
   document.getElementById('worksNew').appendChild(mainDiv);
 
   const cardImage = document.createElement('img');
-  cardImage.src = arrayCards.image;
+  cardImage.src = arrayCards[i].image;
   mainDiv.append(cardImage);
 
   const secondDiv = document.createElement('div');
@@ -80,7 +81,7 @@ function createCard(arrayCards) {
 
   const cardH2 = document.createElement('h2');
   cardH2.className = 'modalh2';
-  const textCard = document.createTextNode(arrayCards.name);
+  const textCard = document.createTextNode(arrayCards[i].name);
   cardH2.appendChild(textCard);
   secondDiv.append(cardH2);
 
@@ -105,7 +106,7 @@ function createCard(arrayCards) {
 
   const subtextCard2 = document.createElement('p');
   subtextCard.className = 'date';
-  const positCard2 = document.createTextNode(arrayCards.description);
+  const positCard2 = document.createTextNode(arrayCards[i].description);
   subtextCard2.appendChild(positCard2);
   secondDiv.append(subtextCard2);
 
@@ -115,38 +116,42 @@ function createCard(arrayCards) {
 
   const technoOriginal1 = document.createElement('button');
   technoOriginal1.className = 'techno-button';
-  const technoIconOriginal1 = document.createTextNode(arrayCards.technologies[0]);
+  const technoIconOriginal1 = document.createTextNode(arrayCards[i].technologies[0]);
   technoOriginal1.appendChild(technoIconOriginal1);
   newDivOriginal.append(technoOriginal1);
 
   const technoOriginal2 = document.createElement('button');
   technoOriginal2.className = 'techno-button';
-  const technoIconOriginal2 = document.createTextNode(arrayCards.technologies[1]);
+  const technoIconOriginal2 = document.createTextNode(arrayCards[i].technologies[1]);
   technoOriginal2.appendChild(technoIconOriginal2);
   newDivOriginal.append(technoOriginal2);
 
   const technoOriginal3 = document.createElement('button');
   technoOriginal3.className = 'techno-button';
-  const technoIconOriginal3 = document.createTextNode(arrayCards.technologies[2]);
+  const technoIconOriginal3 = document.createTextNode(arrayCards[i].technologies[2]);
   technoOriginal3.appendChild(technoIconOriginal3);
   newDivOriginal.append(technoOriginal3);
 
   const technoOriginal4 = document.createElement('button');
   technoOriginal4.className = 'techno-button ruby';
-  const technoIconOriginal4 = document.createTextNode(arrayCards.technologies[3]);
+  const technoIconOriginal4 = document.createTextNode(arrayCards[i].technologies[3]);
   technoOriginal4.appendChild(technoIconOriginal4);
   newDivOriginal.append(technoOriginal4);
 
   const projectCardButton = document.createElement('button');
-  projectCardButton.className = 'project-button source';
+  if (i === 0) {
+    projectCardButton.className = 'project-button';
+  } else if (i === 1) {
+    projectCardButton.className = 'project-button1';
+  } else if (i === 2) {
+    projectCardButton.className = 'project-button2';
+  } else if (i === 3) {
+    projectCardButton.className = 'project-button3';
+  }
+
   const buttonText2 = document.createTextNode('See Project');
   projectCardButton.appendChild(buttonText2);
   secondDiv.append(projectCardButton);
-
-}
-
-for (let i = 0; i < arrayCards.length; i++) {
-  createCard(arrayCards[i]);
 }
 
 function createModal(projectName) {
@@ -175,12 +180,12 @@ function createModal(projectName) {
   modalDiv1.append(subtextPosition2);
 
   const subtextJob2 = document.createElement('li');
-  subtextJob2.className = 'year';
+  subtextJob2.className = 'year2';
   subtextJob2.append(listPosition[1]);
   modalDiv1.append(subtextJob2);
 
   const subtextYear2 = document.createElement('li');
-  subtextYear2.className = 'year';
+  subtextYear2.className = 'year2';
   subtextYear2.append(listPosition[2]);
   modalDiv1.append(subtextYear2);
 
@@ -193,15 +198,27 @@ function createModal(projectName) {
   image.src = projectName.image;
   imageDiv.append(image);
 
+  const bottomDiv = document.createElement('div');
+  bottomDiv.className = "bottomDiv";
+  document.getElementById('modals').appendChild(bottomDiv);
+
+  const bottomDiv2 = document.createElement('div');
+  bottomDiv2.className = "bottomDiv2";
+  bottomDiv.append(bottomDiv2);
+
   const subtext2 = document.createElement('p');
   subtext2.className = 'date';
   const descript = document.createTextNode(projectName.description);
   subtext2.appendChild(descript);
-  document.getElementById('modals').appendChild(subtext2);
+  bottomDiv2.append(subtext2);
+
+  const bottomDiv3 = document.createElement('div');
+  bottomDiv3.className = "bottomDiv3";
+  bottomDiv.append(bottomDiv3);
 
   const newDiv2 = document.createElement('div');
   newDiv2.id = 'newDiv2';
-  document.getElementById('modals').appendChild(newDiv2);
+  bottomDiv3.append(newDiv2)
 
   const techno1 = document.createElement('button');
   techno1.className = 'techno-button';
@@ -223,122 +240,97 @@ function createModal(projectName) {
 
   const newDiv = document.createElement('div');
   newDiv.id = 'newDiv';
-  document.getElementById('modals').appendChild(newDiv);
+  bottomDiv3.append(newDiv);
 
   const live = document.createElement('button');
-  live.className = 'project-button source';
+  live.className = 'project-button-source';
   const buttonText = document.createTextNode('see live');
   live.appendChild(buttonText);
   document.getElementById('newDiv').appendChild(live);
 
+  const liveIcon = document.createElement('img');
+  liveIcon.className = "liveIcon";
+  liveIcon.src = "images/Iconlive.png"
+  live.append(liveIcon);
+
   const source = document.createElement('button');
-  source.className = 'project-button source';
+  source.className = 'project-button-source';
   const buttonText2 = document.createTextNode('see source');
   source.appendChild(buttonText2);
   document.getElementById('newDiv').appendChild(source);
+
+  const sourceIcon = document.createElement('img');
+  sourceIcon.className = "sourceIcon";
+  sourceIcon.src = "images/Vectorsource.png"
+  source.append(sourceIcon);
 }
 
-function createModalDesktop(projectName) {
-  const h2 = document.createElement('h2');
-  h2.className = 'modalh2';
-  const text = document.createTextNode(projectName.name);
-  h2.appendChild(text);
-  document.getElementById('modals2').appendChild(h2);
 
-  const xbutt = document.createElement('img');
-  xbutt.src = 'images/x.png';
-  xbutt.className = 'xButt';
-  h2.append(xbutt);
 
-  const subtext = document.createElement('p');
-  subtext.className = 'date';
-  const posit = document.createTextNode(projectName.position);
-  subtext.appendChild(posit);
-  document.getElementById('modals2').appendChild(subtext);
-
-  const image = document.createElement('img');
-  image.className = 'main-poster';
-  image.src = projectName.image;
-  document.getElementById('modals2').appendChild(image);
-
-  const newDiv1 = document.createElement('div');
-  newDiv1.id = 'newDiv1';
-  document.getElementById('modals2').appendChild(newDiv1);
-
-  const subtext2 = document.createElement('p');
-  subtext2.className = 'date';
-  const descript = document.createTextNode(projectName.description);
-  subtext2.appendChild(descript);
-  newDiv1.append(subtext2);
-
-  const newDiv2 = document.createElement('div');
-  newDiv2.id = 'newDivDeskt';
-  document.getElementById('newDiv1').appendChild(newDiv2);
-
-  const techno1 = document.createElement('button');
-  techno1.className = 'techno-button';
-  const technoIcon1 = document.createTextNode(projectName.technologies[0]);
-  techno1.appendChild(technoIcon1);
-  newDiv2.append(techno1);
-
-  const techno2 = document.createElement('button');
-  techno2.className = 'techno-button';
-  const technoIcon2 = document.createTextNode(projectName.technologies[1]);
-  techno2.appendChild(technoIcon2);
-  newDiv2.append(techno2);
-
-  const techno3 = document.createElement('button');
-  techno3.className = 'techno-button';
-  const technoIcon3 = document.createTextNode(projectName.technologies[2]);
-  techno3.appendChild(technoIcon3);
-  newDiv2.append(techno3);
-
-  const techno4 = document.createElement('button');
-  techno4.className = 'techno-button';
-  const technoIcon4 = document.createTextNode(projectName.technologies[3]);
-  techno4.appendChild(technoIcon4);
-  newDiv2.append(techno4);
-
-  const techno5 = document.createElement('button');
-  techno5.className = 'techno-button';
-  const technoIcon5 = document.createTextNode(projectName.technologies[4]);
-  techno5.appendChild(technoIcon5);
-  newDiv2.append(techno5);
-
-  const techno6 = document.createElement('button');
-  techno6.className = 'techno-button';
-  const technoIcon6 = document.createTextNode(projectName.technologies[5]);
-  techno6.appendChild(technoIcon6);
-  newDiv2.append(techno6);
-
-  const newDiv = document.createElement('div');
-  newDiv.id = 'newDiv';
-  newDiv2.append(newDiv);
-
-  const live = document.createElement('button');
-  live.className = 'project-button source';
-  const buttonText = document.createTextNode('see live');
-  live.appendChild(buttonText);
-  document.getElementById('newDiv').appendChild(live);
-
-  const source = document.createElement('button');
-  source.className = 'project-button source';
-  const buttonText2 = document.createTextNode('see source');
-  source.appendChild(buttonText2);
-  document.getElementById('newDiv').appendChild(source);
-}
-
-const opened = document.querySelector('.project-button');
-opened.addEventListener('click', () => {
+const opened2 = document.querySelector('.project-button1');
+opened2.addEventListener('click', () => {
   const newSection = document.createElement('div');
   newSection.id = 'modals';
   const modal = document.createElement('div');
   modal.className = 'modal';
   newSection.appendChild(modal);
   body.appendChild(newSection);
+  document.body.classList.add('stop-scroll');
+  createModal(projectTwo);
+  const closed = document.querySelector('.xButt');
+  closed.addEventListener('click', () => {
+    body.removeChild(newSection);
+    document.body.classList.remove('stop-scroll');
+  });
+});
+
+const opened1 = document.querySelector('.project-button');
+opened1.addEventListener('click', () => {
+  const newSection = document.createElement('div');
+  newSection.id = 'modals';
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+  newSection.appendChild(modal);
+  body.appendChild(newSection);
+  document.body.classList.add('stop-scroll');
   createModal(projectOne);
   const closed = document.querySelector('.xButt');
   closed.addEventListener('click', () => {
     body.removeChild(newSection);
+    document.body.classList.remove('stop-scroll');
+  });
+});
+
+const opened3 = document.querySelector('.project-button2');
+opened3.addEventListener('click', () => {
+  const newSection = document.createElement('div');
+  newSection.id = 'modals';
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+  newSection.appendChild(modal);
+  body.appendChild(newSection);
+  document.body.classList.add('stop-scroll');
+  createModal(projectThree);
+  const closed = document.querySelector('.xButt');
+  closed.addEventListener('click', () => {
+    body.removeChild(newSection);
+    document.body.classList.remove('stop-scroll');
+  });
+});
+
+const opened4 = document.querySelector('.project-button3');
+opened4.addEventListener('click', () => {
+  const newSection = document.createElement('div');
+  newSection.id = 'modals';
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+  newSection.appendChild(modal);
+  body.appendChild(newSection);
+  document.body.classList.add('stop-scroll');
+  createModal(projectFour);
+  const closed = document.querySelector('.xButt');
+  closed.addEventListener('click', () => {
+    body.removeChild(newSection);
+    document.body.classList.remove('stop-scroll');
   });
 });
