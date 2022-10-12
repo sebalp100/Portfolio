@@ -254,6 +254,11 @@ function createModal(projectName) {
   techno6.appendChild(technoIcon6);
   newDiv2.append(techno6);
 
+  const line = document.createElement('img');
+  line.className = 'line';
+  line.src = 'images/divider.png';
+  newDiv2.append(line);
+
   const newDiv = document.createElement('div');
   newDiv.id = 'newDiv';
   bottomDiv3.append(newDiv);

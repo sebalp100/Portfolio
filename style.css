@@ -642,6 +642,10 @@ textarea {
   padding-left: 20px;
 }
 
+.line {
+  justify-content: center;
+}
+
 @media only screen and (min-width: 768px) {
   .headline,
   .centered,
@@ -952,6 +956,10 @@ textarea {
 
   .bottomDiv3 {
     margin-left: -10%;
+  }
+
+  .line {
+    display: none;
   }
 }
 
