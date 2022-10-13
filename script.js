@@ -373,3 +373,15 @@ function validation(input, requiredMsg, invalidMsg) {
   }
   return true;
 }
+const form = document.querySelector("#bottomForm");
+const reqEmail = "Please enter your email";
+const invalidEmail = "Please enter a correct email address format. The email has to be in lower case. Form not submitted.";
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  let emailValid = validation(form.elements["email"], reqEmail, invalidEmail);
+  if (emailValid) {
+    alert("Form Submitted");
+  }
+});
+
