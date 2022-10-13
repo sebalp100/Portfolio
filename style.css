@@ -647,6 +647,12 @@ textarea {
   justify-content: center;
 }
 
+#errorm {
+  color: rgb(252, 252, 252);
+  font-size: 17px;
+  display: flex;
+}
+
 @media only screen and (min-width: 768px) {
   .headline,
   .centered,
