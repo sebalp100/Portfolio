@@ -339,3 +339,37 @@ opened4.addEventListener('click', () => {
     document.body.classList.remove('stop-scroll');
   });
 });
+
+function showM(input, message2, type) {
+  const message = document.getElementById('errorm')
+  message.innerText = message2;
+  input.className = type ? "success" : "error";
+  return type;
+}
+
+function showError(input, message2) {
+  return showM(input, message2, false);
+}
+
+function showSuccess(input) {
+  return showM(input, "", true);
+}
+
+function values(input, message2) {
+  if (input.value.trim() === "") {
+    return showError(input, message2);
+  }
+  return showSuccess(input);
+}
+
+function validation(input, requiredMsg, invalidMsg) {
+  if (!values(input, requiredMsg)) {
+    return false;
+  }
+
+  const email = input.value.trim();
+  if (!/^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/.test(email)) {
+    return showError(input, invalidMsg);
+  }
+  return true;
+}
