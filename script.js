@@ -341,9 +341,9 @@ opened4.addEventListener('click', () => {
 });
 
 function showM(input, message2, type) {
-  const message = document.getElementById('errorm')
+  const message = document.getElementById('errorm');
   message.innerText = message2;
-  input.className = type ? "success" : "error";
+  input.className = type ? 'success' : 'error';
   return type;
 }
 
@@ -352,11 +352,11 @@ function showError(input, message2) {
 }
 
 function showSuccess(input) {
-  return showM(input, "", true);
+  return showM(input, '', true);
 }
 
 function values(input, message2) {
-  if (input.value.trim() === "") {
+  if (input.value.trim() === '') {
     return showError(input, message2);
   }
   return showSuccess(input);
@@ -373,15 +373,14 @@ function validation(input, requiredMsg, invalidMsg) {
   }
   return true;
 }
-const form = document.querySelector("#bottomForm");
-const reqEmail = "Please enter your email";
-const invalidEmail = "Please enter a correct email address format. The email has to be in lower case. Form not submitted.";
+const form = document.querySelector('#bottomForm');
+const reqEmail = 'Please enter your email';
+const invalidEmail = 'Please enter a correct email address format. The email has to be in lower case. Form not submitted.';
 
-form.addEventListener("submit", function (event) {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
-  let emailValid = validation(form.elements["email"], reqEmail, invalidEmail);
+  const emailValid = validation(form.elements.email, reqEmail, invalidEmail);
   if (emailValid) {
-    alert("Form Submitted");
+    alert('Form Submitted');
   }
 });
-
