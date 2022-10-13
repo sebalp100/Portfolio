@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -27,7 +27,7 @@ main {
 .headline {
   display: flex;
   flex-direction: column;
-  background-image: url("background.svg");
+  background-image: url('background.svg');
   background-repeat: no-repeat;
   background-size: auto;
   border: 1px solid #fff;
@@ -69,13 +69,13 @@ header {
   transition: all 0.5s ease-in-out;
 }
 
+.menu-button.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
 .menu-button.active .bar:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
   background-color: #fff;
-}
-
-.menu-button.active .bar:nth-child(2) {
-  opacity: 0;
 }
 
 .menu-button.active .bar:nth-child(3) {
@@ -156,12 +156,18 @@ h5 {
   font-weight: 600;
 }
 
-.year {
+.year,
+.year2 {
   color: #454b54;
   font-size: 13px;
   font-weight: 600;
   list-style: disc;
   padding-right: 2em;
+}
+
+.year2 {
+  padding-right: 0%;
+  padding-top: 3px;
 }
 
 .card1,
@@ -201,6 +207,10 @@ h5 {
 }
 
 .project-button,
+.project-button1,
+.project-button2,
+.project-button3,
+.project-button-source,
 .resume-button,
 .form-button {
   display: flex;
@@ -217,6 +227,11 @@ h5 {
   font-weight: 600;
   color: #396df2;
   background-color: white;
+}
+
+.project-button-source {
+  padding: 5px 60px;
+  font-size: 12px;
 }
 
 .about {
@@ -319,7 +334,7 @@ h5 {
   display: flex;
   flex-direction: column;
   background-color: #6070ff;
-  background-image: url("background2.png");
+  background-image: url('background2.png');
   background-repeat: no-repeat;
   background-position-x: 150px;
   background-position-y: 18px;
@@ -351,7 +366,7 @@ h5 {
 
 input,
 textarea {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 17px;
   color: #172b4d;
   width: 327px;
@@ -385,6 +400,9 @@ textarea {
 }
 
 .project-button:hover,
+.project-button1:hover,
+.project-button2:hover,
+.project-button3:hover,
 .resume-button:hover {
   border-color: #4958dd;
   color: white;
@@ -438,6 +456,197 @@ textarea {
   display: none;
 }
 
+#modals {
+  display: grid;
+  grid-template-columns: 95vw;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 16px;
+  width: 91%;
+  margin-left: 4.5%;
+  margin-bottom: 10px;
+  margin-top: 1%;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#modals2 {
+  display: flex;
+  flex-direction: column;
+  height: 94vh;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 16px;
+  width: 98%;
+  margin-left: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  position: fixed;
+  top: 0;
+}
+
+#modals h2 {
+  padding-left: 6%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 32px;
+  padding-bottom: 0;
+}
+
+#modals2 h2 {
+  padding-left: 3%;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newSection {
+  width: 100vw;
+  height: 100vh;
+}
+
+.xButt {
+  margin-right: 10%;
+  cursor: pointer;
+}
+
+.mainDiv p {
+  font-size: 15px;
+  padding-bottom: 16px;
+}
+
+#modals p {
+  padding-left: 11%;
+  padding-top: 12px;
+  font-size: 15px;
+  padding-right: 11%;
+}
+
+#modals2 p {
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 12px;
+}
+
+.main-poster {
+  padding-left: 3%;
+  padding-right: 3%;
+  max-height: 400px;
+}
+
+#newDiv2,
+#newDivDeskt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 11%;
+  max-width: 300px;
+}
+
+#newDivDeskt {
+  padding-left: 0;
+}
+
+.techno-button {
+  list-style: none;
+  padding: 4px 12px;
+  border-radius: 8px;
+  background-color: #ebebff;
+  border: #ebebff;
+  color: #6070ff;
+}
+
+.techno-button > li {
+  padding-left: 0;
+}
+
+#newDiv {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#newDiv1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+#newDiv1 p {
+  padding-left: 4%;
+}
+
+.mainBack.active {
+  opacity: 20%;
+  filter: blur(4px);
+}
+
+.worksNew {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+
+.mainDiv {
+  margin-bottom: 100px;
+  background-color: white;
+  border-radius: 16px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px;
+}
+
+#newDivOriginal {
+  display: flex;
+  gap: 10px;
+}
+
+.ruby {
+  display: none;
+}
+
+.modalDiv1 {
+  display: flex;
+  gap: 10px;
+  padding-left: 6%;
+  height: 45px;
+}
+
+.imageDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+}
+
+.stop-scroll {
+  overflow-y: hidden;
+  background-color: rgba(0, 0, 0, 30%);
+}
+
+.liveIcon,
+.sourceIcon {
+  padding-left: 20px;
+}
+
+.line {
+  justify-content: center;
+}
+
 @media only screen and (min-width: 768px) {
   .headline,
   .centered,
@@ -483,11 +692,10 @@ textarea {
   }
 
   header {
-    padding-top: 25px;
+    padding-top: 8px;
     height: 60px;
     width: 100%;
     justify-content: space-around;
-    position: fixed;
   }
 
   h1 {
@@ -712,5 +920,58 @@ textarea {
     background-size: 85%;
     background-position-x: 75px;
     background-position-y: 79px;
+  }
+
+  .xButt {
+    margin-right: 4%;
+  }
+
+  .mainDiv {
+    flex-direction: row;
+    gap: 2%;
+  }
+
+  .mainDiv img {
+    max-width: 60%;
+  }
+
+  .ruby {
+    display: flex;
+  }
+
+  #newDiv {
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  #newDivOriginal {
+    flex-wrap: wrap;
+  }
+
+  .bottomDiv {
+    display: grid;
+    grid-template-columns: 66% 30%;
+    margin-top: 20px;
+  }
+
+  .bottomDiv3 {
+    margin-left: -10%;
+  }
+
+  .line {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #newDiv1 p {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #newDiv1 p {
+    font-size: 15px;
   }
 }
