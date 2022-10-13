@@ -169,10 +169,6 @@ function createModal(projectName) {
   modalDiv1.className = 'modalDiv1';
   document.getElementById('modals').appendChild(modalDiv1);
 
-  const subtextModal = document.createElement('ul');
-  subtextModal.className = 'date';
-  modalDiv1.append(subtextModal);
-
   const subtextPosition2 = document.createElement('li');
   subtextPosition2.className = 'date';
   subtextPosition2.append(listPosition[0]);
@@ -290,9 +286,6 @@ const opened2 = document.querySelector('.project-button1');
 opened2.addEventListener('click', () => {
   const newSection = document.createElement('div');
   newSection.id = 'modals';
-  const modal = document.createElement('div');
-  modal.className = 'modal';
-  newSection.appendChild(modal);
   body.appendChild(newSection);
   document.body.classList.add('stop-scroll');
   document.body.classList.add('dark-backg');
@@ -309,9 +302,6 @@ const opened1 = document.querySelector('.project-button');
 opened1.addEventListener('click', () => {
   const newSection = document.createElement('div');
   newSection.id = 'modals';
-  const modal = document.createElement('div');
-  modal.className = 'modal';
-  newSection.appendChild(modal);
   body.appendChild(newSection);
   document.body.classList.add('stop-scroll');
   createModal(projectOne);
@@ -326,9 +316,6 @@ const opened3 = document.querySelector('.project-button2');
 opened3.addEventListener('click', () => {
   const newSection = document.createElement('div');
   newSection.id = 'modals';
-  const modal = document.createElement('div');
-  modal.className = 'modal';
-  newSection.appendChild(modal);
   body.appendChild(newSection);
   document.body.classList.add('stop-scroll');
   createModal(projectThree);
@@ -343,9 +330,6 @@ const opened4 = document.querySelector('.project-button3');
 opened4.addEventListener('click', () => {
   const newSection = document.createElement('div');
   newSection.id = 'modals';
-  const modal = document.createElement('div');
-  modal.className = 'modal';
-  newSection.appendChild(modal);
   body.appendChild(newSection);
   document.body.classList.add('stop-scroll');
   createModal(projectFour);
